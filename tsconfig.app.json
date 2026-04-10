@@ -5,6 +5,15 @@
   "compilerOptions": {
     // Extra safety for array and object lookups, but may have false positives.
     "noUncheckedIndexedAccess": true,
+    /* Các cấu hình quan trọng khác thường có sẵn */
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    /* Giúp phát hiện lỗi dữ liệu API cực tốt */
+    "strict": true,
+
+    /* Bỏ qua kiểm tra lỗi trong thư viện ngoài (như DevExtreme) để máy chạy nhanh hơn */
+    "skipLibCheck": true,
 
     // Path mapping for cleaner imports.
     "paths": {

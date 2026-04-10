@@ -46,3 +46,8 @@ yarn build
 ```sh
 yarn test:unit
 ```
+### chạy lệnh và nó biến file db.json thành 1 hệ thống REST API đầy đủ (có cả GET, POST, PUT, DELETE) để MOCK DATA
+npx json-server --watch db.json --port 8000
+
+Mẹo nhỏ: Để giả lập mạng chậm nhằm test độ ổn định, bạn có thể thêm tham số --delay khi chạy lệnh:
+npx json-server --watch db.json --port 8000 --delay 2000 (API sẽ phản hồi sau 2 giây).
